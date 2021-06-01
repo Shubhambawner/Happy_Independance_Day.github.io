@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 html{
     scroll-behavior: smooth;
+   
 }
 .header{
     justify-content: center;
@@ -72,7 +76,7 @@ html{
     text-align: center;
 }
 .background{
-    background: rgba(0, 0, 0, 0.7) url('../img/bg.jpg');
+    background: rgba(0, 0, 0, 0.3) url('../img/bg.jpg');
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -225,7 +229,7 @@ footer p{
     .navbar{
         flex-direction: column;
         /*position: relative;*/
-        transition: all 0.4s ease-out;
+        transition: all 0.5s cubic-bezier(0.34, 1.48, 0.65, 0.88);
         height: 337px;
         padding: 1%;
     }
@@ -233,7 +237,8 @@ footer p{
         text-align: center;
     }
     #search{
-        
+        width: 100%;
+        transition: all 3s ease-out;
         margin: 0 0 3% 0;
     }
     .burger{
