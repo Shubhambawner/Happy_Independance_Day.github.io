@@ -154,7 +154,7 @@ function addClicked(){
         //Doc.appendChild(document.createElement('hr'))
         
     }else{
-        alert('please follow the input format, machines are dumb')
+        //alert('please follow the input format, machines are dumb')
     }
 }
 
@@ -173,8 +173,17 @@ setInterval(()=>{
 },1000)
 
 function valid(IPdate, IPtime){
-    return true;
-    //needs update
+     if(new Date(IPdate+'T'+'23:30:00')=='Invalid Date'){
+        alert('Date format entered is invalid !!!\nplease follow the input format, machines are dumb')
+        return false
+    }
+    if(new Date("2021-12-31"+'T'+IPtime)=='Invalid Date'){
+        alert('Time format entered is  invalid !!!\nplease follow the input format, machines are dumb')
+        return false
+    }
+    else{
+        return true;
+    }
 }
 function noComa(str){
     return str.replaceAll(',','٬')
