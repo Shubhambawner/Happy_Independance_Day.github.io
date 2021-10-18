@@ -1,36 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clock allerts</title>
-    <link rel="stylesheet" href="clock.css">
-    
-</head>
-<body>
-    <h2>The Clock</h2>
-    <hr>
-    <p id="11">Display standard time: </p>
-    <hr>
-    <h2>Alerts list:</h2>
-    <p>note: input 24 hour format without spaces
-        <button id="clr" onclick="localStorage.clear();id=0;location.reload()" >Clear list</button>
-    
-    </p>
-    <div id="12">            
-            <input id="121" placeholder="Alert Name" value="clg Party">         
-            <input id="122" placeholder="alert dscription" value="party all night , party hard">         
-            <input id="123" placeholder="YYYY-MM-DD ex.:2021-12-31" value="2021-10-19">         
-            <input id="124" placeholder="hh:mm:ss ex.:15:15:00" value="01:30:00">
-            <button id="120" onclick="addClicked()">Add</button>
-              
-    </div>
-    <hr>
-    <div id="1">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock Alerts</title>
+    
+    <!-- Linking Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="clock.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <i class="bx bx-left-arrow-alt"></i>
+
+            Clock Alert
+
+        </header>
+
+        
+
+        <p id="clock">Display standard time:</p>
+
+        <h3>Alerts list:</h3>
+        <div class="input-part">
+
+        <p>
+            Note: input 24 hour format without spaces
+            
+        </p>
+        <div id="12">
+            <input id="121" placeholder="Alert Name" value="College Party" />
+            <br>
+            <input id="122" placeholder="alert dscription" value="Party all night , Party hard" />
+            <br>
+
+            <input id="123" placeholder="YYYY-MM-DD ex.:2021-12-31" value="2021-10-19" />
+            <br>
+
+            <input id="124" placeholder="hh:mm:ss ex.:15:15:00" value="01:30:00" />
+            <br>
+
+            <button id="120" onclick="addClicked()">Add</button>
+            <button id="clr" onclick="localStorage.clear();id=0;location.reload()">
+                Clear list
+            </button>
+        </div>
+        </div>
+
+        
+        <div id="1"></div>
     </div>
+
     <script src="P2_clock.js"></script>
 </body>
+
 </html>
