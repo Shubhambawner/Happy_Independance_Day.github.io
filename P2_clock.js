@@ -56,7 +56,7 @@ function createHTML(id, d,m,y,h,M,s, Name, desc,Dt){
     }
     if(mm<0){yyyy--;mm+=12}
     if(yyyy<0){
-        para.innerHTML = `<div>event: <b>${Name}</b> is now a History! <br><br><i>${Dt}</i> <br><br>Details: ${desc} </div>`
+          para.innerHTML = `<div class="t5" ><i>event: <b>${Name}</b> is now a History! </i> <button id="" onclick="remove(${id})">Remove</button></div><br><br><i>${Dt}</i> <br><br>Details: ${desc} `
     }
     else{
 
