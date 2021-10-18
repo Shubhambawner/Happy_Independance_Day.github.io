@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock allerts</title>
+    <link rel="stylesheet" href="clock.css">
+    
+</head>
+<body>
+    <h2>The Clock</h2>
+    <hr>
+    <p id="11">Display standard time: </p>
+    <hr>
+    <h2>Alerts list:</h2>
+    <p>note: input 24 hour format without spaces
+        <button id="clr" onclick="localStorage.clear();id=0" >Clear list</button>
+    
+    </p>
+    <div id="12">            
+            <input id="121" placeholder="Alert Name" value="aa">         
+            <input id="122" placeholder="alert dscription" value="bdfgb dfgdf etrgt">         
+            <input id="123" placeholder="YYYY-MM-DD ex.:2021-10-16" value="2021-10-18">         
+            <input id="124" placeholder="hh:mm:ss ex.:15:15:00" value="19:45:55">
+            <button id="120" onclick="addClicked()">Add</button>
+              
+    </div>
+    <hr>
+    <div id="1">
+
+    </div>
+    <script src="P2_clock.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,11 @@
+input{
+    margin: 4px;
+}
+.t5{
+    display: flex;
+    justify-content: space-between;
+}
+b{
+    color: rgb(253, 1, 1);
+    font-size: 30px;
+}
