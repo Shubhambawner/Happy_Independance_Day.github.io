@@ -146,8 +146,8 @@ function addClicked(){
     IPtime = document.getElementById('124').value
     if(valid(IPdate, IPtime)){
         let Dt = new Date(IPdate+'T'+IPtime)
-        Name = document.getElementById('121').value
-        Desc = document.getElementById('122').value
+        Name = noComa(document.getElementById('121').value)
+        Desc = noComa(document.getElementById('122').value)
         //Doc.appendChild(document.createElement('hr'))
         addLocalStorage(Dt,Name ,Desc )
         //driveHTML()
@@ -176,7 +176,9 @@ function valid(IPdate, IPtime){
     return true;
     //needs update
 }
-
+function noComa(str){
+    return str.replaceAll(',','٬')
+}
 function leapYR(yyyy){
     if(yyyy%100!=0 && yyyy%4==0){
         return true
