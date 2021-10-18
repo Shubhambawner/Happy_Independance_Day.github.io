@@ -56,7 +56,7 @@ function createHTML(id, d,m,y,h,M,s, Name, desc,Dt){
     }
     if(mm<0){yyyy--;mm+=12}
     if(yyyy<0){
-         para.innerHTML = `<div class="t5" ><i>event: <b>${Name}</b> is now a History! </i> <button id="" onclick="remove(${id})">Remove</button></div><br><br><i>${Dt}</i> <br><br>Details: ${desc} `
+        para.innerHTML = `<div class="t5" ><i>event: <b>${Name}</b> is now a History! </i> <button id="" onclick="remove(${id})">Remove</button></div><br><br><i>${Dt}</i> <br><br>Details: ${desc} `
     }
     else{
 
@@ -154,8 +154,12 @@ function addClicked(){
         //Doc.appendChild(document.createElement('hr'))
         
     }else{
-        //alert('please follow the input format, machines are dumb')
+        
     }
+}
+
+function noComa(str){
+    return str.replaceAll(',','٬')
 }
 
 setInterval(()=>{
@@ -173,7 +177,7 @@ setInterval(()=>{
 },1000)
 
 function valid(IPdate, IPtime){
-     if(new Date(IPdate+'T'+'23:30:00')=='Invalid Date'){
+    if(new Date(IPdate+'T'+'23:30:00')=='Invalid Date'){
         alert('Date format entered is invalid !!!\nplease follow the input format, machines are dumb')
         return false
     }
@@ -184,10 +188,10 @@ function valid(IPdate, IPtime){
     else{
         return true;
     }
+    
+    //needs update
 }
-function noComa(str){
-    return str.replaceAll(',','٬')
-}
+
 function leapYR(yyyy){
     if(yyyy%100!=0 && yyyy%4==0){
         return true
