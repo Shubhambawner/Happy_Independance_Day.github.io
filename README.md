@@ -1,3 +1,3 @@
-A simple 3 page website!
+A simple javascript website!
 
-My first project on github!
+My first project over javaScript !
