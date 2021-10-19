@@ -1,11 +1,81 @@
-input{
-    margin: 4px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-.t5{
+
+body {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #17da58;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #17da58, #38e772, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #17da58, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-b{
-    color: rgb(253, 1, 1);
-    font-size: 30px;
+.wrapper {
+   
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    
+   
+   
+}
+.wrapper header {
+    color: #17da58;
+    padding: 5px 15px;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 1px 1px black;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+.wrapper header i{
+    
+    font-size: 24px;
+    font-weight: 600;
+}
+#clock {
+    
+    text-align: center;
+    color: #17da58;
+    text-shadow: 1px 1px black;
+}
+h2 {
+    padding: 5px 15px;
+    font-size: 45px;
+}
+h3 {
+    padding: 0px 15px;
+    font-size: 25px;
+}
+.input-part {
+    padding: 0px 15px;
+}
+.input-part input {
+    width: 100%;
+    height: 55px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+.input-part input{
+    text-align: center;
+    border: 1px solid #aaaaaa;
+    margin-bottom: 5px;
+}
+.input-part button {
+    width: 45%;
+    height: 55px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+#i0{
+    display: none;
 }
