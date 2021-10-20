@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(254, 239, 255);
+}
 input{
     margin: 4px;
 }
@@ -6,6 +11,73 @@ input{
     justify-content: space-between;
 }
 b{
-    color: rgb(253, 1, 1);
+    color: rgb(1, 18, 253);
     font-size: 30px;
+    
+}
+
+div{
+    border-radius: 18px;
+    padding: 11px;
+}
+
+input{
+    margin: 4px;
+    background-color: #5f25fa66;
+    padding: 5px;
+    color: aliceblue;
+    border-radius: 25px;
+}
+button{
+    background-color: #673ab79e;
+    border-radius: 15px;
+    color: aliceblue;
+    max-height: 40px;
+}
+hr{
+    color: #0000ff00;
+    display: table;
+    background-color: #ffffff;
+}
+.card{
+    background-color: rgb(219, 219, 219);
+    padding: 5px;
+    border-radius: 25px;
+    max-width: 260px;
+    min-width: 20%;
+    margin: 2%;
+}
+
+.cardTray{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.appart{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 2.5%;
+}
+h1{
+    background-color: #814ae2;
+    margin-top: 0;
+    border-style: outset;
+    /* border-block-color: inherit; */
+    border-color: #814ae2;
+    text-align: center;
+    color: aliceblue;
+}
+h2{
+    color: rgb(234, 0, 255);
+}
+h5{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+i{
+    text-align: left;
 }

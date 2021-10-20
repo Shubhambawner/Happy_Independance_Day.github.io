@@ -5,32 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clock allerts</title>
+    <title>Clock Timer</title>
     <link rel="stylesheet" href="clock.css">
     
 </head>
 <body>
-    <h2>The Clock</h2>
+    <h1>The Clock</h1>
     <hr>
     <p id="11">Display standard time: </p>
-    <hr>
-    <h2>Alerts list:</h2>
-    <p>note: input 24 hour format without spaces
+    
+    <h1>Timers list:</h1>
+    <p class="appart">note: input 24 hour format without spaces
         <button id="clr" onclick="localStorage.clear();id=0;location.reload()" >Clear list</button>
     
     </p>
     <div id="12">            
-            <input id="121" placeholder="Alert Name" value="clg Party">         
+            <input id="121" placeholder="Alert Name" value="New Year Party">         
             <input id="122" placeholder="alert dscription" value="party all night , party hard">         
             <input id="123" placeholder="YYYY-MM-DD ex.:2021-12-31" value="2021-10-19">         
             <input id="124" placeholder="hh:mm:ss ex.:15:15:00" value="01:30:00">
             <button id="120" onclick="addClicked()">Add</button>
               
     </div>
+
     <hr>
-    <div id="1">
+
+    <div id="1" class="cardTray">
 
     </div>
-    <script src="P2_clock.js"></script>
+    <h5> free ki advice yaha de: https://github.com/Shubhambawner/clock-alert.github.io </h5>
+    
+    <script src="clock.js"></script>
+    <script src="toDo.js"></script>
+    <script src="toDoTimer.js"></script>
 </body>
 </html>
