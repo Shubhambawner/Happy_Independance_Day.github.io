@@ -16,7 +16,11 @@
     
     <h1>Timers list:</h1>
     <p class="appart">note: input 24 hour format without spaces
+        <div style="justify-content: space-between;
+        display: flex;">
+        <button id="120" onclick="addClicked()">Add</button>
         <button id="clr" onclick="localStorage.clear();id=0;location.reload()" >Clear list</button>
+            </div>
     
     </p>
     <div id="12">            
@@ -24,7 +28,6 @@
             <input id="122" placeholder="alert dscription" value="party all night , party hard">         
             <input id="123" placeholder="YYYY-MM-DD ex.:2021-12-31" value="2021-10-19">         
             <input id="124" placeholder="hh:mm:ss ex.:15:15:00" value="01:30:00">
-            <button id="120" onclick="addClicked()">Add</button>
               
     </div>
 
